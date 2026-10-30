@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Deskwell – Desk &amp; Tech Store</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand"><span>Desk</span>well</div>
+  <button class="btn" id="userBtn">Sign in</button>
+  <button class="btn dark cartbtn" id="cartBtn" aria-label="Open cart">Cart<span class="badge" id="count">0</span></button>
+</header>
+
+<section class="hero">
+  <h1>Gear for a better desk.</h1>
+  <p>Keyboards, lamps, audio and accessories. Free delivery above ₹2,999. Use code THIRANEX10 for 10% off.</p>
+</section>
+
+<div class="tools">
+  <input id="q" type="search" placeholder="Search products" aria-label="Search products">
+  <div class="row" id="cats"></div>
+  <select id="sort" aria-label="Sort products">
+    <option value="feat">Featured</option>
+    <option value="low">Price: low to high</option>
+    <option value="high">Price: high to low</option>
+    <option value="rate">Top rated</option>
+  </select>
+</div>
+
+<main><div class="grid" id="grid"></div></main>
+
+<div class="overlay" id="ov"></div>
+<aside class="panel" id="panel" role="dialog" aria-modal="true" aria-label="Panel"></aside>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
